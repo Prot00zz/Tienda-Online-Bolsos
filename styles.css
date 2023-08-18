@@ -84,8 +84,25 @@ a:hover {
     color: #c6bb86;
 }
 
+.menu{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 .logo {
-    height: 250px;
+    height: 1.5rem;
     display: flex;
 }
 
@@ -154,6 +171,8 @@ p {
 
 .btn-menu {
     display: none;
+    background: transparent;
+    border: none;
 }
 
 .slider-container ul {
@@ -229,7 +248,7 @@ p {
 .container-products .cuadros {
     width: 100%;
     align-items: center;
-    min-height: 100%;
+    height: 100%;
 
 }
 
@@ -237,6 +256,10 @@ p {
     margin-bottom: 5px;
     margin-top: 5px;
     color: #969281
+}ç
+
+.container-encabezados{
+    position:relative;
 }
 
 
@@ -314,6 +337,11 @@ p {
 
 }
 @media screen and (max-width:768px){
+
+    .container-products .cuadros{
+        min-height: 100%;
+        height: auto;
+    }
     .cuadros{
         position: relative;
     }
